@@ -12,6 +12,8 @@ A modern, responsive, and aesthetic academic portfolio website for **Dr. Ashish 
 - **Education Timeline**: Qualifications path from B.Tech, M.Tech (GGSIPU), to Ph.D. (Delhi Technological University, 2024).
 - **Interactive Modals**: Formatted academic bio generator and CV export.
 
+live website : https://vanshsachdeva21.github.io/Website/
+
 ## 🚀 Getting Started
 Open `index.html` directly in any web browser or serve locally using any static web server:
 
