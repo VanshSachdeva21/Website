@@ -1,0 +1,1061 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr. Ashish Bajaj — Assistant Professor | AI & NLP Researcher</title>
+  <meta name="description" content="Academic portfolio of Dr. Ashish Bajaj, Assistant Professor in Computer Science & Engineering at Thapar Institute of Engineering & Technology. Research in Adversarial ML, Robust NLP, LLM Safety & Explainable AI." />
+  <meta name="keywords" content="Dr. Ashish Bajaj, Ashish Bajaj, Thapar Institute, Assistant Professor, Adversarial ML, Robust NLP, LLM Safety, Explainable AI, DTU, Computer Science" />
+  <meta name="author" content="Dr. Ashish Bajaj" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Dr. Ashish Bajaj — Academic Portfolio & Research" />
+  <meta property="og:description" content="Assistant Professor at Thapar Institute of Engineering & Technology. Specializing in Adversarial ML, Robust NLP, and Trustworthy AI." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="scrollProgress" class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Background Ambient Glow Canvas -->
+  <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
+  <div class="ambient-glow glow-top-right" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom-center" aria-hidden="true"></div>
+
+  <!-- Site Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Dr. Ashish Bajaj Homepage">
+        <div class="brand-avatar-box">
+          <img src="profile.jpg" alt="Dr. Ashish Bajaj" class="brand-avatar-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="brand-avatar-fallback">AB</div>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Dr. Ashish Bajaj</span>
+          <span class="brand-role"><i class="fa-solid fa-graduation-cap"></i> TIET • CSE Dept</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-desktop" id="navDesktop" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#research" class="nav-link">Research</a>
+        <a href="#publications" class="nav-link">Publications</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#teaching" class="nav-link">Teaching</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Action Controls -->
+      <div class="header-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Switch dark/light theme">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+        <button id="quickBioBtn" class="btn btn-sm btn-outline-nav" title="View formatted academic bio">
+          <i class="fa-solid fa-user-tie"></i>
+          <span>Bio</span>
+        </button>
+        <a id="downloadCV" class="btn btn-sm btn-primary-nav" href="#cvModal" title="Download or view curriculum vitae">
+          <i class="fa-solid fa-download"></i>
+          <span>CV</span>
+        </a>
+        <button id="mobileMenuBtn" class="icon-btn mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          <i class="fa-solid fa-bars" id="menuIcon"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobileDrawer">
+      <nav class="mobile-nav-links">
+        <a href="#about" class="mobile-nav-link"><i class="fa-solid fa-user"></i> About</a>
+        <a href="#research" class="mobile-nav-link"><i class="fa-solid fa-atom"></i> Research Focus</a>
+        <a href="#publications" class="mobile-nav-link"><i class="fa-solid fa-book-open"></i> Publications</a>
+        <a href="#projects" class="mobile-nav-link"><i class="fa-solid fa-code"></i> Code & Toolkits</a>
+        <a href="#teaching" class="mobile-nav-link"><i class="fa-solid fa-chalkboard-user"></i> Teaching</a>
+        <a href="#education" class="mobile-nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+        <a href="#contact" class="mobile-nav-link"><i class="fa-solid fa-envelope"></i> Contact</a>
+      </nav>
+      <div class="mobile-drawer-footer">
+        <button class="btn btn-outline w-full" id="mobileBioBtn"><i class="fa-solid fa-user-tie"></i> Academic Bio</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-content" id="top">
+    
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-grid">
+        
+        <!-- Left Hero Column -->
+        <div class="hero-intro">
+          <div class="badge-status-pill animate-fade-in">
+            <span class="status-indicator-dot"></span>
+            <span>Open for Research Collaboration & Student Mentorship</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="hero-greeting">Hello, I'm</span>
+            <span class="hero-name gradient-text">Dr. Ashish Bajaj</span>
+          </h1>
+
+          <div class="hero-dynamic-role">
+            <i class="fa-solid fa-terminal prompt-icon"></i>
+            <span class="typed-text" id="typedIntro">Researcher • Teacher • Engineer</span>
+            <span class="cursor-blink">|</span>
+          </div>
+
+          <p class="hero-description" id="oneLiner">
+            Assistant Professor in the <strong>Dept. of Computer Science & Engineering</strong> at <strong>Thapar Institute of Engineering & Technology (TIET)</strong>, Patiala. Focused on developing robust, adversarial-resilient, and trustworthy NLP & Machine Learning systems.
+          </p>
+
+          <!-- Quick Highlight Metrics / Chips -->
+          <div class="hero-stats-row">
+            <div class="stat-badge">
+              <span class="stat-number">Ph.D.</span>
+              <span class="stat-label">IT, DTU Delhi</span>
+            </div>
+            <div class="stat-badge">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">AI Toolkits</span>
+            </div>
+            <div class="stat-badge">
+              <span class="stat-number">TIET</span>
+              <span class="stat-label">Dept. of CSE</span>
+            </div>
+            <div class="stat-badge">
+              <span class="stat-number">NLP</span>
+              <span class="stat-label">& Trustworthy AI</span>
+            </div>
+          </div>
+
+          <!-- Hero Action CTAs -->
+          <div class="hero-actions">
+            <a href="#publications" class="btn btn-primary btn-glow">
+              <i class="fa-solid fa-book-bookmark"></i>
+              <span>Explore Research</span>
+            </a>
+            <a href="#contact" class="btn btn-glass">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Get in Touch</span>
+            </a>
+            <button id="heroBioBtn" class="btn btn-outline">
+              <i class="fa-solid fa-id-card"></i>
+              <span>Quick Bio</span>
+            </button>
+          </div>
+
+          <!-- Quick Contact Bar -->
+          <div class="hero-quick-links">
+            <button class="chip-action" id="copyEmail" title="Copy institutional email to clipboard">
+              <i class="fa-regular fa-copy"></i>
+              <span class="chip-text">ashish.bajaj@thapar.edu</span>
+            </button>
+            <a class="chip-link" href="https://github.com/Ashish25096" target="_blank" rel="noopener noreferrer" title="View GitHub Repositories">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a class="chip-link" href="https://scholar.google.com" target="_blank" rel="noopener noreferrer" title="Google Scholar Profile">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>Scholar</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Hero Column (Portrait Card) -->
+        <div class="hero-profile-showcase">
+          <div class="profile-card-wrapper spotlight-card">
+            <div class="profile-card-glow-bg"></div>
+            
+            <div class="profile-card-inner">
+              <div class="profile-image-container">
+                <div class="avatar-ring">
+                  <img src="profile.jpg" alt="Dr. Ashish Bajaj" class="profile-photo" id="profileImage" />
+                </div>
+                <div class="profile-online-badge" title="Active in Research & Academic Service">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+              </div>
+
+              <div class="profile-info-block">
+                <h3 class="profile-name">Dr. Ashish Bajaj</h3>
+                <p class="profile-designation">Assistant Professor</p>
+                <div class="profile-affiliation-tag">
+                  <i class="fa-solid fa-building-columns"></i>
+                  <span>Thapar Institute of Engineering & Technology</span>
+                </div>
+              </div>
+
+              <div class="profile-divider"></div>
+
+              <ul class="profile-meta-list">
+                <li class="meta-item">
+                  <div class="meta-icon"><i class="fa-solid fa-envelope"></i></div>
+                  <div class="meta-content">
+                    <span class="meta-label">Primary Email</span>
+                    <a href="mailto:ashish.bajaj@thapar.edu" class="meta-value">ashish.bajaj@thapar.edu</a>
+                  </div>
+                </li>
+                <li class="meta-item">
+                  <div class="meta-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+                  <div class="meta-content">
+                    <span class="meta-label">Personal Email</span>
+                    <a href="mailto:bajaj.ashish25@gmail.com" class="meta-value">bajaj.ashish25@gmail.com</a>
+                  </div>
+                </li>
+                <li class="meta-item">
+                  <div class="meta-icon"><i class="fa-solid fa-location-dot"></i></div>
+                  <div class="meta-content">
+                    <span class="meta-label">Location</span>
+                    <span class="meta-value">Patiala, Punjab, India</span>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="profile-social-row">
+                <a href="https://github.com/Ashish25096" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile" title="GitHub Profile">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:ashish.bajaj@thapar.edu" class="social-icon-btn" aria-label="Direct Email" title="Send Email">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="#publications" class="social-icon-btn" aria-label="Publications" title="View Publications">
+                  <i class="fa-solid fa-file-lines"></i>
+                </a>
+                <button id="copyProfileLink" class="social-icon-btn" aria-label="Copy Contact Details" title="Copy Contact Card Info">
+                  <i class="fa-solid fa-share-nodes"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About & Profile Summary Section -->
+    <section id="about" class="section-container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-user"></i> Academic Profile</div>
+        <h2 class="section-title">Overview & Philosophy</h2>
+        <p class="section-subtitle">Pioneering secure, explainable, and resilient intelligence in Natural Language Processing</p>
+      </div>
+
+      <div class="about-overview-card glass-panel">
+        <div class="about-text-lead">
+          <p>
+            I am a Computer Science researcher and faculty member holding a <strong>Ph.D. in Information Technology</strong> from <strong>Delhi Technological University (DTU)</strong>. My primary research is situated at the intersection of <strong>Artificial Intelligence, Natural Language Processing (NLP), Adversarial Machine Learning, and Trustworthy AI</strong>.
+          </p>
+          <p>
+            As deep language models and Generative AI systems integrate into high-stakes domains, understanding their failure modes, vulnerabilities to adversarial perturbations, and safety boundaries is paramount. My lab investigates systematic stress-testing, character- and semantic-level perturbation attacks, defense mechanisms, and transparent model evaluation frameworks.
+          </p>
+        </div>
+
+        <div class="two-column-features">
+          <!-- Research Interests Pillar -->
+          <div class="feature-box">
+            <div class="feature-box-header">
+              <div class="feature-icon icon-emerald"><i class="fa-solid fa-shield-halved"></i></div>
+              <h3>Core Research Interests</h3>
+            </div>
+            <ul class="feature-checklist">
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Robust & Trustworthy NLP:</strong> Vulnerability assessment & adversarial resilience.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Adversarial Machine Learning:</strong> Black-box & white-box attacks and defensive distillation.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>LLM Safety & AI Reliability:</strong> Hallucination mitigation, jailbreak auditing, guardrails.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Explainable & Responsible AI (XAI):</strong> Post-hoc interpretability and feature attribution.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Transformer-based Model Evaluation:</strong> Out-of-distribution stress testing.</li>
+            </ul>
+          </div>
+
+          <!-- Academic Teaching Pillar -->
+          <div class="feature-box">
+            <div class="feature-box-header">
+              <div class="feature-icon icon-indigo"><i class="fa-solid fa-chalkboard-user"></i></div>
+              <h3>Pedagogy & Teaching</h3>
+            </div>
+            <ul class="feature-checklist">
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Artificial Intelligence & Machine Learning:</strong> Foundations to state-of-the-art.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Deep Learning & Neural Architectures:</strong> CNNs, RNNs, Attention & Transformers.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Natural Language Processing:</strong> Language modeling, sentiment analysis, semantic search.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Data Structures & Algorithms:</strong> Algorithm design, time-space optimization.</li>
+              <li><i class="fa-solid fa-circle-check"></i> <strong>Modern Programming:</strong> Python (PyTorch, HuggingFace, NumPy) & C++.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Pillars (Bento Grid) -->
+    <section id="research" class="section-container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-atom"></i> Research Dimensions</div>
+        <h2 class="section-title">Key Research Pillars</h2>
+        <p class="section-subtitle">Targeting the most pressing challenges in AI safety, adversarial robustness, and interpretability</p>
+      </div>
+
+      <div class="bento-grid">
+        
+        <!-- Bento Card 1 -->
+        <div class="bento-card spotlight-card">
+          <div class="bento-icon-wrapper">
+            <i class="fa-solid fa-shield-virus"></i>
+          </div>
+          <h3>Adversarial ML & Robustness</h3>
+          <p>
+            Investigating imperceptible character substitutions, homoglyphs, and token manipulation that cause classification failure in transformer models, alongside certified defense mechanisms.
+          </p>
+          <div class="bento-tags">
+            <span class="tag-pill">Character Perturbations</span>
+            <span class="tag-pill">Defense Benchmarks</span>
+            <span class="tag-pill">HOMOCHAR</span>
+          </div>
+        </div>
+
+        <!-- Bento Card 2 -->
+        <div class="bento-card spotlight-card">
+          <div class="bento-icon-wrapper accent-cyan">
+            <i class="fa-solid fa-brain"></i>
+          </div>
+          <h3>LLM Safety & Trustworthy AI</h3>
+          <p>
+            Designing safety boundaries, hallucination reduction methods, and alignment guardrails for generative large language models in sensitive real-world applications.
+          </p>
+          <div class="bento-tags">
+            <span class="tag-pill">LLM Safety</span>
+            <span class="tag-pill">Hallucination Mitigation</span>
+            <span class="tag-pill">Alignment</span>
+          </div>
+        </div>
+
+        <!-- Bento Card 3 -->
+        <div class="bento-card spotlight-card">
+          <div class="bento-icon-wrapper accent-amber">
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <h3>Explainable AI (XAI)</h3>
+          <p>
+            Developing transparent attribution metrics that provide human-understandable rationales for neural decisions, ensuring responsible and auditable AI deployment.
+          </p>
+          <div class="bento-tags">
+            <span class="tag-pill">Interpretability</span>
+            <span class="tag-pill">Feature Attribution</span>
+            <span class="tag-pill">Auditing</span>
+          </div>
+        </div>
+
+        <!-- Bento Card 4 -->
+        <div class="bento-card spotlight-card">
+          <div class="bento-icon-wrapper accent-emerald">
+            <i class="fa-solid fa-sliders"></i>
+          </div>
+          <h3>Transformer Stress-Testing</h3>
+          <p>
+            Systematic benchmark evaluation and stress-testing of BERT, RoBERTa, DeBERTa, and LLM backbones against distribution shifts and noisy conversational input.
+          </p>
+          <div class="bento-tags">
+            <span class="tag-pill">Model Auditing</span>
+            <span class="tag-pill">Stress Toolkit</span>
+            <span class="tag-pill">Text-Muddler</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Selected Publications & Research Explorer -->
+    <section id="publications" class="section-container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-book-open"></i> Scholarly Output</div>
+        <h2 class="section-title">Selected Publications & Papers</h2>
+        <p class="section-subtitle">Search, filter by thematic area, or copy citation BibTeX entries</p>
+      </div>
+
+      <div class="pub-explorer-card glass-panel">
+        
+        <!-- Controls: Filter Tabs + Search Input -->
+        <div class="pub-controls-bar">
+          <div class="pub-filter-tabs" id="pubTabs">
+            <button class="pub-tab active" data-category="all">All Research</button>
+            <button class="pub-tab" data-category="adversarial">Adversarial ML</button>
+            <button class="pub-tab" data-category="nlp">NLP & Transformers</button>
+            <button class="pub-tab" data-category="explainable">Explainable AI</button>
+          </div>
+
+          <div class="pub-search-wrapper">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input id="pubFilter" type="text" placeholder="Search by keyword, topic, venue..." aria-label="Filter publications" />
+            <button id="clearFilter" class="clear-btn" title="Clear filter" style="display:none;">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Publication Count Indicator -->
+        <div class="pub-status-bar">
+          <span id="pubCount" class="pub-count-badge">Showing 3 publications</span>
+        </div>
+
+        <!-- Publication Cards List -->
+        <div id="publicationsList" class="publications-grid">
+          
+          <!-- Publication 1 -->
+          <article class="pub-card" data-category="adversarial" data-keywords="adversarial,robustness,classification,attacks,defenses,perturbation,journal">
+            <div class="pub-badge-row">
+              <span class="pub-type-badge journal"><i class="fa-solid fa-bookmark"></i> Selected Journal</span>
+              <span class="pub-year-badge">2024</span>
+            </div>
+            <h3 class="pub-title">Adversarial Attacks and Defenses in Classification Models: A Systematic Character-Level Perspective</h3>
+            <p class="pub-authors">
+              <strong class="highlight-author">Bajaj, A.</strong>, et al.
+            </p>
+            <p class="pub-venue"><i class="fa-solid fa-scroll"></i> Peer-Reviewed Academic Journal in Information Technology & Neural Systems</p>
+            
+            <div class="pub-abstract" id="abstract-1">
+              <p>Investigates the susceptibility of deep text classification pipelines to non-semantic character-level perturbations and homoglyph substitutions. Proposes resilient defense frameworks mitigating degradation while retaining classification fidelity.</p>
+            </div>
+
+            <div class="pub-actions">
+              <button class="btn btn-xs btn-outline toggle-abstract" data-target="abstract-1">
+                <i class="fa-solid fa-angle-down"></i> <span>Abstract</span>
+              </button>
+              <button class="btn btn-xs btn-outline bibtex-btn" data-bibtex="@article{bajaj2024adversarial,
+  title={Adversarial attacks and defenses in classification models: A systematic character-level perspective},
+  author={Bajaj, Ashish and others},
+  journal={Selected IT & Neural Systems Journal},
+  year={2024}
+}">
+                <i class="fa-solid fa-quote-left"></i> <span>Cite (BibTeX)</span>
+              </button>
+              <a href="https://github.com/Ashish25096/HOMOMCHAR" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-primary-outline">
+                <i class="fa-brands fa-github"></i> <span>Code</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Publication 2 -->
+          <article class="pub-card" data-category="nlp" data-keywords="nlp,transformer,evaluation,bert,roberta,conference,benchmarking">
+            <div class="pub-badge-row">
+              <span class="pub-type-badge conference"><i class="fa-solid fa-users-rectangle"></i> International Conference</span>
+              <span class="pub-year-badge">2023</span>
+            </div>
+            <h3 class="pub-title">Transformer-Based Model Evaluation for Natural Language Processing Under Distribution Shifts</h3>
+            <p class="pub-authors">
+              <strong class="highlight-author">Bajaj, A.</strong>, et al.
+            </p>
+            <p class="pub-venue"><i class="fa-solid fa-scroll"></i> Proceedings of the International Conference on Natural Language & Machine Intelligence</p>
+            
+            <div class="pub-abstract" id="abstract-2">
+              <p>Provides an empirical stress-test evaluation protocol for transformer language models (BERT, RoBERTa, T5) across out-of-domain benchmarks, revealing failure patterns in standard accuracy metrics.</p>
+            </div>
+
+            <div class="pub-actions">
+              <button class="btn btn-xs btn-outline toggle-abstract" data-target="abstract-2">
+                <i class="fa-solid fa-angle-down"></i> <span>Abstract</span>
+              </button>
+              <button class="btn btn-xs btn-outline bibtex-btn" data-bibtex="@inproceedings{bajaj2023transformer,
+  title={Transformer-based model evaluation for natural language processing under distribution shifts},
+  author={Bajaj, Ashish and others},
+  booktitle={International Conference on Natural Language & Machine Intelligence},
+  year={2023}
+}">
+                <i class="fa-solid fa-quote-left"></i> <span>Cite (BibTeX)</span>
+              </button>
+              <a href="https://github.com/Ashish25096/INFLEXA" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-primary-outline">
+                <i class="fa-brands fa-github"></i> <span>Code</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Publication 3 -->
+          <article class="pub-card" data-category="explainable" data-keywords="explainable,ai,xai,metrics,evaluation,trustworthy,journal">
+            <div class="pub-badge-row">
+              <span class="pub-type-badge journal"><i class="fa-solid fa-bookmark"></i> Selected Journal</span>
+              <span class="pub-year-badge">2023</span>
+            </div>
+            <h3 class="pub-title">Explainability & Trustworthy AI: Metrics, Verification, and Evaluation Protocols</h3>
+            <p class="pub-authors">
+              <strong class="highlight-author">Bajaj, A.</strong>, et al.
+            </p>
+            <p class="pub-venue"><i class="fa-solid fa-scroll"></i> Journal of Responsible Artificial Intelligence & Explainable Computing</p>
+            
+            <div class="pub-abstract" id="abstract-3">
+              <p>Formulates comprehensive quantitative metrics to benchmark post-hoc feature attributions, saliency maps, and attention-based explanations in mission-critical NLP applications.</p>
+            </div>
+
+            <div class="pub-actions">
+              <button class="btn btn-xs btn-outline toggle-abstract" data-target="abstract-3">
+                <i class="fa-solid fa-angle-down"></i> <span>Abstract</span>
+              </button>
+              <button class="btn btn-xs btn-outline bibtex-btn" data-bibtex="@article{bajaj2023explainability,
+  title={Explainability & trustworthy AI: metrics, verification, and evaluation protocols},
+  author={Bajaj, Ashish and others},
+  journal={Journal of Responsible Artificial Intelligence & Explainable Computing},
+  year={2023}
+}">
+                <i class="fa-solid fa-quote-left"></i> <span>Cite (BibTeX)</span>
+              </button>
+              <a href="https://github.com/Ashish25096/Text-Muddler" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-primary-outline">
+                <i class="fa-brands fa-github"></i> <span>Code</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- No Results Fallback -->
+        <div id="noPubsFound" class="no-results" style="display:none;">
+          <i class="fa-solid fa-folder-open"></i>
+          <h4>No publications found</h4>
+          <p>Try searching with different keywords or clear the filter.</p>
+          <button id="resetSearchBtn" class="btn btn-sm btn-outline">Reset Filters</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Open Source Research Toolkits & Code -->
+    <section id="projects" class="section-container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-laptop-code"></i> Code & Frameworks</div>
+        <h2 class="section-title">Open-Source Research Projects</h2>
+        <p class="section-subtitle">Reproducible research repositories and toolkits developed for the AI community</p>
+      </div>
+
+      <div class="projects-grid">
+        
+        <!-- Project 1: HOMOCHAR -->
+        <div class="project-card spotlight-card">
+          <div class="project-card-header">
+            <div class="project-icon-box">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <a href="https://github.com/Ashish25096/HOMOMCHAR" target="_blank" rel="noopener noreferrer" class="external-link-icon" title="View repository">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+          <h3 class="project-name">
+            <a href="https://github.com/Ashish25096/HOMOMCHAR" target="_blank" rel="noopener noreferrer">HOMOCHAR</a>
+          </h3>
+          <p class="project-desc">
+            Adversarial character-level perturbation framework for stress-testing natural language classification models via homoglyphic substitutions and visual similarity embeddings.
+          </p>
+          <div class="project-tech-stack">
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">PyTorch</span>
+            <span class="tech-pill">Adversarial ML</span>
+            <span class="tech-pill">NLP</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/Ashish25096/HOMOMCHAR" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline w-full">
+              <i class="fa-brands fa-github"></i> <span>View on GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: INFLEXA -->
+        <div class="project-card spotlight-card">
+          <div class="project-card-header">
+            <div class="project-icon-box accent-cyan">
+              <i class="fa-solid fa-code-fork"></i>
+            </div>
+            <a href="https://github.com/Ashish25096/INFLEXA" target="_blank" rel="noopener noreferrer" class="external-link-icon" title="View repository">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+          <h3 class="project-name">
+            <a href="https://github.com/Ashish25096/INFLEXA" target="_blank" rel="noopener noreferrer">INFLEXA</a>
+          </h3>
+          <p class="project-desc">
+            Adversarial robustness research platform and benchmark suite designed to quantify model resilience against inflectional and morphological NLP perturbations.
+          </p>
+          <div class="project-tech-stack">
+            <span class="tech-pill">Transformers</span>
+            <span class="tech-pill">HuggingFace</span>
+            <span class="tech-pill">Robustness</span>
+            <span class="tech-pill">Evaluation</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/Ashish25096/INFLEXA" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline w-full">
+              <i class="fa-brands fa-github"></i> <span>View on GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: Text-Muddler -->
+        <div class="project-card spotlight-card">
+          <div class="project-card-header">
+            <div class="project-icon-box accent-amber">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <a href="https://github.com/Ashish25096/Text-Muddler" target="_blank" rel="noopener noreferrer" class="external-link-icon" title="View repository">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+          <h3 class="project-name">
+            <a href="https://github.com/Ashish25096/Text-Muddler" target="_blank" rel="noopener noreferrer">Text-Muddler</a>
+          </h3>
+          <p class="project-desc">
+            A modular text perturbation and data augmentation toolkit for testing model uncertainty, calibration, and out-of-distribution drift in deep language representations.
+          </p>
+          <div class="project-tech-stack">
+            <span class="tech-pill">Data Augmentation</span>
+            <span class="tech-pill">Stress-Testing</span>
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">NLP</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/Ashish25096/Text-Muddler" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline w-full">
+              <i class="fa-brands fa-github"></i> <span>View on GitHub</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Teaching & Mentorship Section -->
+    <section id="teaching" class="section-container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-chalkboard-user"></i> Pedagogy & Mentorship</div>
+        <h2 class="section-title">Courses & Student Guidance</h2>
+        <p class="section-subtitle">Fostering analytical rigor, algorithmic depth, and research curiosity in CSE students</p>
+      </div>
+
+      <div class="teaching-grid">
+        
+        <!-- Course 1 -->
+        <div class="teaching-card glass-panel">
+          <div class="teaching-card-top">
+            <div class="course-code-badge">CS / AI Core</div>
+            <div class="course-icon"><i class="fa-solid fa-robot"></i></div>
+          </div>
+          <h3>Artificial Intelligence & Machine Learning</h3>
+          <p>Search algorithms, game trees, probabilistic reasoning, Bayesian learning, classification/regression pipelines, and reinforcement learning foundations.</p>
+          <div class="course-topics">
+            <span>Search & Heuristics</span>
+            <span>Supervised ML</span>
+            <span>Unsupervised Learning</span>
+          </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="teaching-card glass-panel">
+          <div class="teaching-card-top">
+            <div class="course-code-badge">Advanced AI</div>
+            <div class="course-icon"><i class="fa-solid fa-network-wired"></i></div>
+          </div>
+          <h3>Deep Learning & Neural Architectures</h3>
+          <p>Backpropagation dynamics, Convolutional Networks, Sequence Models (LSTM, GRU), Transformer mechanisms, self-attention, and PyTorch implementations.</p>
+          <div class="course-topics">
+            <span>Optimization</span>
+            <span>Transformers</span>
+            <span>PyTorch</span>
+          </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="teaching-card glass-panel">
+          <div class="teaching-card-top">
+            <div class="course-code-badge">NLP Specialization</div>
+            <div class="course-icon"><i class="fa-solid fa-language"></i></div>
+          </div>
+          <h3>Natural Language Processing</h3>
+          <p>Tokenization, word embeddings (Word2Vec, GloVe), BERT/RoBERTa representations, generative LLMs, prompt engineering, and adversarial evaluation.</p>
+          <div class="course-topics">
+            <span>Embeddings</span>
+            <span>Pretrained LLMs</span>
+            <span>Safety</span>
+          </div>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="teaching-card glass-panel">
+          <div class="teaching-card-top">
+            <div class="course-code-badge">Core Foundation</div>
+            <div class="course-icon"><i class="fa-solid fa-diagram-project"></i></div>
+          </div>
+          <h3>Data Structures & Algorithms</h3>
+          <p>Asymptotic complexity, trees, graphs, dynamic programming, divide-and-conquer, greedy algorithms, and competitive problem solving in C++ / Python.</p>
+          <div class="course-topics">
+            <span>Trees & Graphs</span>
+            <span>DP & Greedy</span>
+            <span>Complexity</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Prospective Students Note -->
+      <div class="mentorship-banner glass-panel">
+        <div class="mentorship-icon-box">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div class="mentorship-text">
+          <h4>Information for Prospective Research Students</h4>
+          <p>I actively supervise undergraduate capstones, Master's theses, and Ph.D. scholars with strong mathematical foundations and passion for NLP, Adversarial ML, or Explainable AI. Reach out with your CV and research statement.</p>
+        </div>
+        <a href="#contact" class="btn btn-sm btn-primary">Apply / Inquire</a>
+      </div>
+    </section>
+
+    <!-- Academic Education Timeline -->
+    <section id="education" class="section-container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Academic Journey</div>
+        <h2 class="section-title">Education & Qualifications</h2>
+        <p class="section-subtitle">Academic degrees and institutional foundation</p>
+      </div>
+
+      <div class="timeline-container glass-panel">
+        
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot-wrapper">
+            <div class="timeline-dot active"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-year">2024</span>
+              <span class="degree-badge phd">Doctor of Philosophy</span>
+            </div>
+            <h3 class="degree-title">Ph.D. in Information Technology</h3>
+            <h4 class="degree-institution"><i class="fa-solid fa-building-columns"></i> Delhi Technological University (DTU), New Delhi</h4>
+            <p class="degree-description">
+              Doctoral research focused on <strong>Adversarial Machine Learning, Robust Natural Language Processing, and Reliable Deep Architectures</strong> under the guidance of leading faculty. Developed novel perturbation benchmarks and defense pipelines for neural classification systems.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot-wrapper">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-year">2021</span>
+              <span class="degree-badge mtech">Master of Technology</span>
+            </div>
+            <h3 class="degree-title">M.Tech. in Information Technology</h3>
+            <h4 class="degree-institution"><i class="fa-solid fa-building-columns"></i> Guru Gobind Singh Indraprastha University (GGSIPU), New Delhi</h4>
+            <p class="degree-description">
+              Specialized in Advanced Machine Learning, Intelligent Systems, Information Retrieval, and Deep Learning applications with high academic distinction.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot-wrapper">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-year">2019</span>
+              <span class="degree-badge btech">Bachelor of Technology</span>
+            </div>
+            <h3 class="degree-title">B.Tech. in Computer Science & Engineering</h3>
+            <h4 class="degree-institution"><i class="fa-solid fa-building-columns"></i> Computer Science & Engineering</h4>
+            <p class="degree-description">
+              Core foundations in Data Structures, Algorithms, Operating Systems, Database Management Systems, Theory of Computation, and Software Engineering.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact & Collaboration Hub -->
+    <section id="contact" class="section-container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-paper-plane"></i> Get In Touch</div>
+        <h2 class="section-title">Contact & Collaborations</h2>
+        <p class="section-subtitle">Interested in academic collaborations, speaking invitations, or research inquiries?</p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Left: Contact Details Cards -->
+        <div class="contact-info-col">
+          
+          <div class="contact-card glass-panel">
+            <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-card-text">
+              <h4>Institutional Email</h4>
+              <p>For academic, department, and student inquiries:</p>
+              <a href="mailto:ashish.bajaj@thapar.edu" class="contact-email-link">ashish.bajaj@thapar.edu</a>
+              <button class="btn btn-xs btn-outline copy-inline-btn" data-copy="ashish.bajaj@thapar.edu">
+                <i class="fa-regular fa-copy"></i> Copy
+              </button>
+            </div>
+          </div>
+
+          <div class="contact-card glass-panel">
+            <div class="contact-card-icon accent-cyan"><i class="fa-solid fa-inbox"></i></div>
+            <div class="contact-card-text">
+              <h4>Personal / Research Email</h4>
+              <p>For direct research discussions and collaborative projects:</p>
+              <a href="mailto:bajaj.ashish25@gmail.com" class="contact-email-link">bajaj.ashish25@gmail.com</a>
+              <button class="btn btn-xs btn-outline copy-inline-btn" data-copy="bajaj.ashish25@gmail.com">
+                <i class="fa-regular fa-copy"></i> Copy
+              </button>
+            </div>
+          </div>
+
+          <div class="contact-card glass-panel">
+            <div class="contact-card-icon accent-amber"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-card-text">
+              <h4>Academic Office Location</h4>
+              <p>Department of Computer Science & Engineering<br>
+              <strong>Thapar Institute of Engineering & Technology (TIET)</strong><br>
+              Patiala, Punjab — 147004, India</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Interactive Message Box -->
+        <div class="contact-form-col">
+          <div class="contact-form-card glass-panel">
+            <h3>Send a Direct Message</h3>
+            <p class="form-instructions">Fill in the message details below to compose a direct email or copy your structured inquiry.</p>
+            
+            <form id="contactForm" class="styled-form" onsubmit="return false;">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-user input-icon"></i>
+                  <input id="name" type="text" placeholder="e.g. Dr. Jane Smith" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email Address</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-envelope input-icon"></i>
+                  <input id="email" type="email" placeholder="e.g. jane.smith@university.edu" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject / Purpose</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-heading input-icon"></i>
+                  <input id="subject" type="text" placeholder="e.g. Research Collaboration / Seminar Talk / Mentorship" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <div class="input-with-icon textarea-icon-box">
+                  <i class="fa-solid fa-message input-icon"></i>
+                  <textarea id="message" placeholder="Write your message or inquiry here..." rows="4" required></textarea>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="button" id="sendMailto" class="btn btn-primary">
+                  <i class="fa-solid fa-paper-plane"></i> Send Email
+                </button>
+                <button type="button" id="send" class="btn btn-outline">
+                  <i class="fa-regular fa-copy"></i> Copy Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-top-row">
+        <div class="footer-brand">
+          <div class="footer-avatar">AB</div>
+          <div>
+            <h4>Dr. Ashish Bajaj</h4>
+            <p>Assistant Professor, Dept. of Computer Science & Engineering<br>Thapar Institute of Engineering & Technology, Patiala, India</p>
+          </div>
+        </div>
+        <div class="footer-links-group">
+          <h5>Quick Navigation</h5>
+          <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="#projects">Projects</a>
+            <a href="#teaching">Teaching</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+        <div class="footer-connect">
+          <h5>Connect</h5>
+          <div class="footer-social-icons">
+            <a href="https://github.com/Ashish25096" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:ashish.bajaj@thapar.edu" aria-label="Official Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom-row">
+        <p class="copyright-text">© 2026 Dr. Ashish Bajaj. All rights reserved.</p>
+        <p class="footer-note">Designed for Academic Excellence & Research Innovation</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="backToTop" class="back-to-top-btn" aria-label="Scroll back to top" title="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Modal: Quick Academic Bio -->
+  <div class="modal-backdrop" id="bioModal" aria-hidden="true" role="dialog" aria-labelledby="bioModalTitle">
+    <div class="modal-card glass-panel">
+      <div class="modal-header">
+        <div class="modal-title-box">
+          <div class="modal-icon"><i class="fa-solid fa-user-tie"></i></div>
+          <div>
+            <h3 id="bioModalTitle">Academic Bio & Biography</h3>
+            <p class="modal-subtitle">Formatted biographies for conference introductions, speaker bios, and grant proposals</p>
+          </div>
+        </div>
+        <button class="modal-close-btn" id="closeBioModal" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        
+        <!-- Short Bio Tab -->
+        <div class="bio-section">
+          <div class="bio-header">
+            <h4><i class="fa-solid fa-bolt"></i> Short Bio (Conference Introduction / Program Chair)</h4>
+            <button class="btn btn-xs btn-outline copy-bio-btn" data-target="shortBioText">
+              <i class="fa-regular fa-copy"></i> Copy Short Bio
+            </button>
+          </div>
+          <div class="bio-text-box" id="shortBioText">
+Dr. Ashish Bajaj is an Assistant Professor in the Department of Computer Science & Engineering at Thapar Institute of Engineering & Technology (TIET), Patiala, India. He holds a Ph.D. in Information Technology from Delhi Technological University (DTU). His research focuses on Robust NLP, Adversarial Machine Learning, LLM Safety, and Explainable AI.
+          </div>
+        </div>
+
+        <!-- Detailed Bio Tab -->
+        <div class="bio-section">
+          <div class="bio-header">
+            <h4><i class="fa-solid fa-file-lines"></i> Extended Academic Biography</h4>
+            <button class="btn btn-xs btn-outline copy-bio-btn" data-target="longBioText">
+              <i class="fa-regular fa-copy"></i> Copy Extended Bio
+            </button>
+          </div>
+          <div class="bio-text-box" id="longBioText">
+Dr. Ashish Bajaj is an Assistant Professor in the Department of Computer Science & Engineering at Thapar Institute of Engineering & Technology (TIET), Patiala, India. He received his Ph.D. in Information Technology from Delhi Technological University (DTU) in 2024 and his M.Tech. in Information Technology from Guru Gobind Singh Indraprastha University (GGSIPU) in 2021.
+
+His research interests lie in Artificial Intelligence, Natural Language Processing, Adversarial Machine Learning, Trustworthy AI, and Explainable AI (XAI). He has published in reputable peer-reviewed journals and conferences and is the author of open-source research frameworks including HOMOCHAR, INFLEXA, and Text-Muddler. He actively mentors graduate and undergraduate researchers in AI reliability and safety.
+          </div>
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-sm btn-outline" id="closeBioFooterBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: BibTeX Citation -->
+  <div class="modal-backdrop" id="bibtexModal" aria-hidden="true" role="dialog" aria-labelledby="bibtexModalTitle">
+    <div class="modal-card glass-panel">
+      <div class="modal-header">
+        <div class="modal-title-box">
+          <div class="modal-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <div>
+            <h3 id="bibtexModalTitle">BibTeX Citation</h3>
+            <p class="modal-subtitle">Copy formatted citation for LaTeX / Overleaf</p>
+          </div>
+        </div>
+        <button class="modal-close-btn" id="closeBibtexModal" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <pre class="bibtex-code-box" id="bibtexContent"><code></code></pre>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-sm btn-outline" id="closeBibtexFooterBtn">Close</button>
+        <button class="btn btn-sm btn-primary" id="copyBibtexModalBtn">
+          <i class="fa-regular fa-copy"></i> Copy BibTeX
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: CV Preview / Download Options -->
+  <div class="modal-backdrop" id="cvModal" aria-hidden="true" role="dialog" aria-labelledby="cvModalTitle">
+    <div class="modal-card glass-panel">
+      <div class="modal-header">
+        <div class="modal-title-box">
+          <div class="modal-icon"><i class="fa-solid fa-file-arrow-down"></i></div>
+          <div>
+            <h3 id="cvModalTitle">Curriculum Vitae</h3>
+            <p class="modal-subtitle">Download or print Dr. Ashish Bajaj's CV</p>
+          </div>
+        </div>
+        <button class="modal-close-btn" id="closeCvModal" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="cv-summary-box">
+          <h4>Dr. Ashish Bajaj, Ph.D.</h4>
+          <p>Assistant Professor — Dept. of Computer Science & Engineering<br>Thapar Institute of Engineering & Technology, Patiala, Punjab, India</p>
+          <div class="cv-features-list">
+            <div><i class="fa-solid fa-check text-emerald"></i> <strong>Education:</strong> Ph.D. IT (DTU, 2024), M.Tech. IT (GGSIPU, 2021)</div>
+            <div><i class="fa-solid fa-check text-emerald"></i> <strong>Research:</strong> Adversarial ML, Robust NLP, LLM Safety, XAI</div>
+            <div><i class="fa-solid fa-check text-emerald"></i> <strong>Teaching:</strong> AI & ML, Deep Learning, NLP, Data Structures & Algorithms</div>
+            <div><i class="fa-solid fa-check text-emerald"></i> <strong>Software:</strong> HOMOCHAR, INFLEXA, Text-Muddler</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer cv-modal-footer">
+        <button class="btn btn-sm btn-outline" id="printCvBtn">
+          <i class="fa-solid fa-print"></i> Print View (PDF)
+        </button>
+        <button class="btn btn-sm btn-primary" id="downloadTxtCvBtn">
+          <i class="fa-solid fa-download"></i> Download CV (.txt)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
